@@ -3,7 +3,7 @@ This page covers advanced snippet techniques for javascript. Describes code snip
 You can contribute anytime using Pull Request.
 
 # Snippets
-#### Using Local Storage Using Object
+#### Save/Load Local Storage Using Object
 ```javascript
 function setLocalStorageItem(key, item) {
     localStorage.setItem(key, JSON.stringify(item));
