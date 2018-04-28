@@ -2,11 +2,9 @@
 This page covers advanced snippet techniques for javascript. Describes code snippets that can be used.
 You can contribute anytime using Pull Request.
 
-- Validation
-- Data manipulation
-- List
-
-***
+- [Validation](https://github.com/hg-pyun/awesome-snippets-js#validation)
+- [Data manipulation](https://github.com/hg-pyun/awesome-snippets-js#data-manipulation)
+- [Performance](https://github.com/hg-pyun/awesome-snippets-js#performance)
 
 # Snippets
 ## Validation
@@ -29,7 +27,7 @@ function getLocalStorageItem(key) {
 }
 ```
 
-## List
+## Performance
 #### Infinite Scroll
 ```javascript
 // window
