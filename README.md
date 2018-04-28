@@ -5,7 +5,13 @@ You can contribute anytime using Pull Request.
 # Snippets
 #### Using Local Storage Using Object
 ```javascript
+function setLocalStorageItem(key, item) {
+    localStorage.setItem(key, JSON.stringify(item));
+}
 
+function getLocalStorageItem(key) {
+    return JSON.parse(localStorage.getItem(key));
+}
 ```
 
 #### Infinite Scroll
