@@ -1,5 +1,6 @@
 # awesome-snippets-js
 This page covers advanced snippet techniques for javascript. Describes code snippets that can be used.
+You can contribute anytime using Pull Request.
 
 # Snippets
 #### Using Local Storage Using Object
