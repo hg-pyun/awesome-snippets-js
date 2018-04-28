@@ -6,7 +6,8 @@ You can contribute anytime using Pull Request.
 - [Data manipulation](https://github.com/hg-pyun/awesome-snippets-js#data-manipulation)
 - [Performance](https://github.com/hg-pyun/awesome-snippets-js#performance)
 
-# Snippets
+* * *
+
 ## Validation
 #### Check iOS
 ```javascript
