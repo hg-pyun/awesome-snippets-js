@@ -2,7 +2,22 @@
 This page covers advanced snippet techniques for javascript. Describes code snippets that can be used.
 You can contribute anytime using Pull Request.
 
+- Validation
+- Data manipulation
+- List
+
+***
+
 # Snippets
+## Validation
+#### Check iOS
+```javascript
+function checkiOS() {
+    return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+}
+```
+
+## Data Manipulation
 #### Save/Load Local Storage Using Object
 ```javascript
 function setLocalStorageItem(key, item) {
@@ -14,6 +29,7 @@ function getLocalStorageItem(key) {
 }
 ```
 
+## List
 #### Infinite Scroll
 ```javascript
 // window
