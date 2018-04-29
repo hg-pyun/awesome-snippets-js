@@ -16,6 +16,13 @@ function checkiOS() {
 ```
 
 ## Data Manipulation
+#### trim
+```javascript
+function trim(text) {
+    return ttext.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+}
+```
+
 #### Number With Comma
 ```javascript
 function numberWithComma(number) {
