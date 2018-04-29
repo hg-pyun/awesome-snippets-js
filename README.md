@@ -8,10 +8,45 @@ You can contribute anytime using Pull Request.
 
 * * *
 ## Validation
+#### Check Browser
+```javascript
+TBD
+```
+
+#### Check OS
+```javascript
+TBD
+```
+
+#### Check Android
+```javascirpt
+TBD
+```
+
 #### Check iOS
 ```javascript
 function checkiOS() {
     return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+}
+```
+
+#### EscapeHTML (XSS)
+```javascript
+var entityMap = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;',
+    '/': '&#x2F;',
+    '`': '&#x60;',
+    '=': '&#x3D;'
+};
+
+function escapeHtml (string) {
+    return String(string).replace(/[&<>"'`=\/]/g, function fromEntityMap (s) {
+        return entityMap[s];
+    });
 }
 ```
 
@@ -78,6 +113,21 @@ function handleScrollEvent() {
 ```
 
 #### Lazy Loading
+```javascript
+TBD
+```
+
+#### Swipe
+```javascript
+TBD
+```
+
+#### throttle
+```javascript
+TBD
+```
+
+#### debounce
 ```javascript
 TBD
 ```
