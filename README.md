@@ -19,7 +19,7 @@ TBD
 ```
 
 #### Check Android
-```javascirpt
+```javascript
 TBD
 ```
 
@@ -122,12 +122,12 @@ TBD
 TBD
 ```
 
-#### throttle
+#### Throttle
 ```javascript
 TBD
 ```
 
-#### debounce
+#### Debounce
 ```javascript
 TBD
 ```
