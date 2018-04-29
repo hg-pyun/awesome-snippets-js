@@ -16,7 +16,7 @@ function checkiOS() {
 ```
 
 ## Data Manipulation
-## Number With Comma
+#### Number With Comma
 ```javascript
 function numberWithComma(number) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
