@@ -16,17 +16,28 @@ function checkiOS() {
 ```
 
 ## Data Manipulation
-#### trim
-```javascript
-function trim(text) {
-    return ttext.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+#### Ellipse String
+````javascript
+function ellipseStr(str, length) {
+    if(!str || !length || str.length <= length){
+        return str;
+    }
+
+    return `${str.slice(0, length - 3)}...`;
 }
-```
+````
 
 #### Number With Comma
 ```javascript
 function numberWithComma(number) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+```
+
+#### Trim
+```javascript
+function trim(string) {
+    return string.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
 }
 ```
 
