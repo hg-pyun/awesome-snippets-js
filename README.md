@@ -7,7 +7,6 @@ You can contribute anytime using Pull Request.
 - [Performance](https://github.com/hg-pyun/awesome-snippets-js#performance)
 
 * * *
-
 ## Validation
 #### Check iOS
 ```javascript
@@ -17,6 +16,13 @@ function checkiOS() {
 ```
 
 ## Data Manipulation
+## Number With Comma
+```javascript
+function numberWithComma(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+```
+
 #### Save/Load Local Storage Using Object
 ```javascript
 function setLocalStorageItem(key, item) {
