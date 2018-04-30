@@ -113,8 +113,55 @@ function handleScrollEvent() {
 ```
 
 #### Lazy Loading
+```html
+<img data-src="img_url">
+```
 ```javascript
-TBD
+let debounceId = null;
+window.addEventListener('scroll', handleScrollEvent, false);
+
+function handleScrollEvent() {
+    // simple debounce logic.
+    if (debounceId) {
+        clearTimeout(debounceId);
+    }
+
+    debounceId = setTimeout(() => {
+        this.lazyLoadImage();
+    }, 100); // lazyload time
+}
+
+function lazyLoadImage() {
+    const imgList = document.getElementsByClassName('loading');
+    if (imgList.length === 0) return;
+
+    const viewportTop = window.scrollY;
+    const viewportBottom = scrollTop + window.innerHeight;
+
+    Array.from(imgList).forEach((figure) => {
+        const imgOffsetTop = figure.offsetTop;
+        const imgOffsetButton = figure.offsetTop + figure.clientHeight;
+
+        if (imgOffsetTop <= viewportBottom && imgOffsetButton >= viewportTop) {
+            const $elLink = figure.childNodes[0];
+            const $elImg = $elLink.childNodes[0];
+            const targetSrc = $elImg.getAttribute('data-src');
+
+            const loader = new Image();
+
+            loader.onload = () => {
+                // remove figure, 'loading' class.
+                $elImg.src = targetSrc;
+            };
+
+            loader.onerror = (e) => {
+                // handle image error
+            };
+
+            loader.src = targetSrc;
+        }
+    });
+}
 ```
 
 #### Swipe
