@@ -101,7 +101,8 @@ function escapeHtml (string) {
     };
   }
 })();
-
+```
+```javsscript
 // Round
 Math.round10(55.55, -1);   // 55.6
 Math.round10(55.549, -1);  // 55.5
