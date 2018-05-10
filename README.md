@@ -210,7 +210,7 @@ function lazyLoadImage() {
     if (imgList.length === 0) return;
 
     const viewportTop = window.scrollY;
-    const viewportBottom = scrollTop + window.innerHeight;
+    const viewportBottom = window.scrollY + window.innerHeight;
 
     Array.from(imgList).forEach((figure) => {
         const imgOffsetTop = figure.offsetTop;
