@@ -51,7 +51,7 @@ function escapeHtml (string) {
 ```
 
 #### Escape Linebreak with React
-```javscript
+```javascript
 import React from 'react';
 
 function replaceLinebreak(text) {
