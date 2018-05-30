@@ -50,6 +50,20 @@ function escapeHtml (string) {
 }
 ```
 
+#### Escape Linebreak with React
+```javscript
+import React from 'react';
+
+function replaceLinebreak(text) {
+    const lineArray = text.split('\n');
+    const lineArrayLength = lineArray.length;
+    return lineArray.map((line, index) => {
+        return <span key={index}>{line}{index === lineArrayLength - 1? '' : <br/>}</span>;
+    });
+}
+
+```
+
 ## Data Manipulation
 #### Decimal Math round/floor/ceil
 ```javascript
