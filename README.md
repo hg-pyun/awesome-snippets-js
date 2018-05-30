@@ -160,6 +160,25 @@ function getLocalStorageItem(key) {
 }
 ```
 
+#### Get Touch Position
+```javascript
+// 'e' is touchEvent Object. (touchStart, touchMove, touchEnd)
+function getTouchPositionX(e) {
+    return e.changedTouches ? e.changedTouches[0].pageX : e.pageX;
+}
+
+function getTouchPositionY(e) {
+    return e.changedTouches ? e.changedTouches[0].pageY : e.pageY;
+}
+```
+
+#### Calculate Drag Angle
+```javascript
+function getAngle(deltaX, deltaY) {
+    return Math.atan(deltaY / deltaX) * 180 / Math.PI;
+}
+```
+
 ## Performance
 #### Infinite Scroll
 ```javascript
