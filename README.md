@@ -183,6 +183,13 @@ function getAngle(deltaX, deltaY) {
 }
 ```
 
+#### Highlighting String
+```javascript
+function highlight(message, keyword) {
+    return message && escapeHtml(message).replace(new RegExp(escapeRegExp(keyword), ['gi']), '<em>$&</em>');
+}
+```
+
 ## Performance
 #### Infinite Scroll
 ```javascript
