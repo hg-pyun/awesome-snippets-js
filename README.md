@@ -8,21 +8,6 @@ You can contribute anytime using Pull Request.
 
 * * *
 ## Validation
-#### Check Browser
-```javascript
-TBD
-```
-
-#### Check OS
-```javascript
-TBD
-```
-
-#### Check Android
-```javascript
-TBD
-```
-
 #### Check iOS
 ```javascript
 function checkiOS() {
@@ -61,7 +46,12 @@ function replaceLinebreak(text) {
         return <span key={index}>{line}{index === lineArrayLength - 1? '' : <br/>}</span>;
     });
 }
-
+```
+#### Escape Regular Expression String
+```javascript
+function escapeRegExp(string){
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $&는 일치한 전체 문자열을 의미합니다.
+}
 ```
 
 ## Data Manipulation
