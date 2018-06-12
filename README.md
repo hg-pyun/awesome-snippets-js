@@ -4,7 +4,7 @@ You can contribute anytime using Pull Request.
 
 - [Validation](https://github.com/hg-pyun/awesome-snippets-js#validation)
 - [Data manipulation](https://github.com/hg-pyun/awesome-snippets-js#data-manipulation)
-- [Performance](https://github.com/hg-pyun/awesome-snippets-js#performance)
+- [Performance Utility](https://github.com/hg-pyun/awesome-snippets-js#performance)
 
 * * *
 ## Validation
@@ -190,7 +190,7 @@ function highlight(message, keyword) {
 }
 ```
 
-## Performance
+## Performance Utility
 #### Infinite Scroll
 ```javascript
 // window
@@ -229,22 +229,22 @@ TBD
 #### Throttle
 ```javascript
 const throttle = (func, limit) => {
-  let lastFunc
-  let lastRan
-  return function() {
-    const context = this
-    const args = arguments
+  let lastFunc;
+  let lastRan;
+  return function() {;
+    const context = this;
+    const args = arguments;
     if (!lastRan) {
-      func.apply(context, args)
-      lastRan = Date.now()
+      func.apply(context, args);
+      lastRan = Date.now();
     } else {
       clearTimeout(lastFunc)
       lastFunc = setTimeout(function() {
         if ((Date.now() - lastRan) >= limit) {
-          func.apply(context, args)
-          lastRan = Date.now()
+          func.apply(context, args);
+          lastRan = Date.now();
         }
-      }, limit - (Date.now() - lastRan))
+      }, limit - (Date.now() - lastRan));
     }
   }
 }
@@ -255,10 +255,10 @@ const throttle = (func, limit) => {
 const debounce = (func, delay) => {
   let inDebounce
   return function() {
-    const context = this
-    const args = arguments
-    clearTimeout(inDebounce)
-    inDebounce = setTimeout(() => func.apply(context, args), delay)
+    const context = this;
+    const args = arguments;
+    clearTimeout(inDebounce);
+    inDebounce = setTimeout(() => func.apply(context, args), delay);
   }
 }
 ```
