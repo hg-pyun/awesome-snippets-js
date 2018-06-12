@@ -4,7 +4,7 @@ You can contribute anytime using Pull Request.
 
 - [Validation](https://github.com/hg-pyun/awesome-snippets-js#validation)
 - [Data manipulation](https://github.com/hg-pyun/awesome-snippets-js#data-manipulation)
-- [Performance Utility](https://github.com/hg-pyun/awesome-snippets-js/blob/master/README.md#performance-utility)
+- [Performance utility](https://github.com/hg-pyun/awesome-snippets-js/blob/master/README.md#performance-utility)
 
 * * *
 ## Validation
